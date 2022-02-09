@@ -1,0 +1,103 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:4939331172374627185",
+      "lastPropertyId": "2:620884549265289911",
+      "name": "CookStep",
+      "properties": [
+        {
+          "id": "1:7302317800625087090",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:620884549265289911",
+          "name": "name",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:4234849896132338393",
+      "lastPropertyId": "3:4295837358865359898",
+      "name": "Ingredient",
+      "properties": [
+        {
+          "id": "1:7414726157729100226",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:8156625410053918709",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:4295837358865359898",
+          "name": "qty",
+          "type": 9
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:6512361065137052460",
+      "lastPropertyId": "4:8062215537843377019",
+      "name": "Recipe",
+      "properties": [
+        {
+          "id": "1:173986706456748815",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:24468813453137080",
+          "name": "name",
+          "type": 9
+        },
+        {
+          "id": "3:2453332171227589342",
+          "name": "person",
+          "type": 6
+        },
+        {
+          "id": "4:8062215537843377019",
+          "name": "minutes",
+          "type": 6
+        }
+      ],
+      "relations": [
+        {
+          "id": "1:6006322525188907291",
+          "name": "ingredients",
+          "targetId": "2:4234849896132338393"
+        },
+        {
+          "id": "3:7170313599929625832",
+          "name": "steps",
+          "targetId": "1:4939331172374627185"
+        }
+      ]
+    }
+  ],
+  "lastEntityId": "3:6512361065137052460",
+  "lastIndexId": "0:0",
+  "lastRelationId": "3:7170313599929625832",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [
+    3927509460858596563
+  ],
+  "version": 1
+}
